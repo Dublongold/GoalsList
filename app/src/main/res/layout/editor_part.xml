@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/editTextContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editorGoalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/editor_add_new_goal_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/goalTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="goal"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/goal_text_field_hint"
+            android:inputType="textMultiLine" />
+        <com.helpfull.goalsList.customViews.ErrorMessageView
+            android:id="@+id/textErrorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editPriorityContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goalPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/priority"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/priorityTextField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="priority"
+            android:ems="10"
+            android:hint="@string/priority_text_field_hint"
+            android:inputType="number" />
+        <com.helpfull.goalsList.customViews.ErrorMessageView
+            android:id="@+id/priorityErrorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""/>
+    </LinearLayout>
+</LinearLayout>

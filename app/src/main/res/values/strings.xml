@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="priority_text_field_hint">Write priority…</string>
+    <string name="priority">Priority:</string>
+    <string name="editor_add_new_goal_text">Goal:</string>
+    <string name="goal_text_field_hint">Write goal text…</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="submit_delete_title">Do you really want to delete this goal?</string>
+    <string name="submit_delete_all_title">Do you really want to delete all goal?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="editor_add_goal_title"><u>Write new goal:</u></string>
+    <string name="editor_edit_title"><u>Edit goal:</u></string>
+    <string name="goals_title"><u>Your goals:</u></string>
+    <string name="add_new_goal_description">Add new goal</string>
+    <string name="go_back_description">Go back</string>
+    <string name="delete_goal">Delete goal:</string>
+    <string name="align_by_priorities">Align by priorities</string>
+    <string name="delege_all_goals">Delege all goals</string>
+</resources>

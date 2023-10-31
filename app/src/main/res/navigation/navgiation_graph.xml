@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navgiation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.helpfull.goalsList.views.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/openSubmitFragment"
+            app:destination="@id/submitDeleteFragment" />
+        <action
+            android:id="@+id/openAddFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/openEditFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.helpfull.goalsList.views.add.AddFragment"
+        android:label="AddFragment" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.helpfull.goalsList.views.edit.EditFragment"
+        android:label="EditFragment" >
+        <action
+            android:id="@+id/openSubmitFragment"
+            app:destination="@id/submitDeleteFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/submitDeleteFragment"
+        android:name="com.helpfull.goalsList.views.submitDelete.SubmitDeleteFragment"
+        android:label="SubmitDeleteFragment" />
+
+    <action
+        android:id="@+id/openMain"
+        app:destination="@id/mainFragment"
+        app:popUpTo="@id/mainFragment"
+        app:popUpToInclusive="true"/>
+</navigation>

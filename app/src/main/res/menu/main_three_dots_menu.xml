@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/alignByPriorities"
+        android:title="@string/align_by_priorities"/>
+    <item android:id="@+id/deleteAll"
+        android:title="@string/delege_all_goals"/>
+</menu>
